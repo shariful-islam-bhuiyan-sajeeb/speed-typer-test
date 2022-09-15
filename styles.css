@@ -142,9 +142,10 @@ button {
 }
 
 #histories {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding-bottom: 25px;
 }
 
 .card {
@@ -181,12 +182,36 @@ button {
   top: 0;
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 1200px) {
+  #histories {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+}
+
+@media only screen and (max-width: 768px) {
   .box-container {
     padding: 0 20px;
     width: 100%;
   }
+
+  #histories {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
   .card {
     flex-direction: column;
+    gap: 10px;
+  }
+
+  #question {
+    height: 100%;
+    padding: 20px 10px;
   }
 }
+
+
