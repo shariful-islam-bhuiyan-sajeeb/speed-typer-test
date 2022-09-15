@@ -11,6 +11,35 @@ body {
   font-family: "Zilla Slab", serif;
 }
 
+#header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 80%;
+  margin: 0 auto;
+}
+
+#header ul {
+  display: flex;
+  list-style: none;
+}
+
+#header ul li {
+  margin: 10px 2px;
+
+}
+
+#header ul li a {
+  padding: 15px;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+#header ul li a:hover {
+  color: #eb6565 !important;
+}
+
 .box-container {
   width: 70%;
   margin: 0 auto;
